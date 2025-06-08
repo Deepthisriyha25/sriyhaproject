@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2><center>Grab Your Tickets</center></h2>
+    <form>
+        <label for="name">Enter your name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Your name here"><br><br>
+
+        <label for="phone">Phone Number:</label><br><br>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit phone number" title="Please enter a 10-digit phone number without spaces or dashes"><br><br>
+
+        <label for="lang"><strong>Select Your Movie:</strong></label><br><br>
+        <select name = "lang" id="lang">
+            <option value="select">Select</option>
+            <option value="Bhairavam">Bhairavam</option>
+            <option value="Single">Single</option>
+            <option value="Kaleja">Kaleja</option>
+            <option value="Subham">Subham</option>
+        </select><br></br>
+        <label for="lang"><strong>Select Time:</strong></label><br><br>
+          <input type="radio" id="time1" name="time" value="10.00AM" >
+          <label for="time1">10.00AM</label><br>
+          <input type="radio" id="time2" name="time" value="1.00PM">
+          <label for="time2">1.00PM</label><br>
+          <input type="radio" id="time3" name="time" value="4.00PM">
+          <label for="time3">4.00PM</label><br>
+          <input type="radio" id="time4" name="time" value="7.00PM">
+          <label for="time4">7.00PM</label><br>
+
+        </select><br><br>
+        <label for="seats"><strong>Enter Seats:</strong></label><br><br>
+        <input type="text" id="seats" name="seats" pattern="([A-Z][1-9]){1,5}" placeholder="E.g., A1B2C3" required title="=Allowed format: A–Z rows and seat numbers 1–9. Max 5 seats."><br><br>
+        <label for="payment">Payment Method:</label><br><br>
+        <select id="payment" name="payment">
+            <option value="select">select</option>
+            <option value="upi">UPI</option>
+            <option value="card">Credit/Debit Card</option>
+            <option value="cash">Cash on Counter</option>
+        </select><br><br>
+    </form>
+    <form action="booked.html" method="get">
+            <input type="submit" value="Submit">
+    </form>
+    
+    
+</body>
+</html>
